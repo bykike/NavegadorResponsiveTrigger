@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+	<title>Menú superpuesto</title>
+</head>
+<body>
+	<header class="cd-header">
+		<div class="cd-logo"><a href="#0"><img src="img/logo.png" alt="Logo"></a></div>
+
+		<a class="cd-primary-nav-trigger" href="#0">
+			<span class="cd-menu-text">Menú</span><span class="cd-menu-icon"></span>
+		</a> <!-- cd-primary-nav-trigger -->
+	</header>
+
+	<nav>
+		<ul class="cd-primary-nav">
+			<li class="cd-label">Título 1</li>
+
+			<li><a href="#0">Apartado 1</a></li>
+			<li><a href="#0">Apartado 2</a></li>
+
+			<li class="cd-label">Título 2</li>
+
+			<li><a href="#0">Apartado 3</a></li>
+			<li><a href="#0">Apartado 4</a></li>
+
+			<li class="cd-label">Síguenos</li>
+
+			<li class="cd-social cd-facebook"><a href="#0">Facebook</a></li>
+			<li class="cd-social cd-instagram"><a href="#0">Instagram</a></li>
+			<li class="cd-social cd-dribbble"><a href="#0">Dribbble</a></li>
+			<li class="cd-social cd-twitter"><a href="#0">Twitter</a></li>
+		</ul>
+	</nav>
+
+
+				<div id="large-header" class="large-header">
+
+				</div>
+
+
+
+
+
+
+
+
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+
+<script src="js/demo-1.js"></script>
+
+<!-- Script for smooth scrolling -->
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+</body>
+</html>
